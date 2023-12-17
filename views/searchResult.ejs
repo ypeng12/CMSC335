@@ -1,0 +1,27 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="/css/style.css"> <!-- Link to your CSS file -->
+    <title>Search Result</title>
+</head>
+<body>
+    <div class="search-container"> <!-- Apply search-container class for styling -->
+        <h1><strong>Display The Stock For User Request</strong></h1>
+
+        <% if (stock) { %>
+            <div>
+                <%- stock %> <!-- Your dynamic stock table will be displayed here -->
+            </div>
+        <% } else { %>
+            <p>No results found!</p>
+        <% } %>
+
+        <div class="link" >
+            <a href="/" class="search-button">HOME</a> <!-- Use search-button class for styling -->
+        </div>
+    </div>
+</body>
+</html>
